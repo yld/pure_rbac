@@ -1,0 +1,55 @@
+require: rubocop-rspec
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'bin/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - "spec/dummy/bin/*"
+    - 'spec/dummy/db/schema.rb'
+    - 'vendor/**/*'
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+  - "*.gemspec"
+  - "spec/**/*"
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: true
+  Exclude:
+  - "spec/**/*"
+
+Rails/CreateTableWithTimestamps:
+  Enabled: true
+  Exclude:
+  - "db/migrate/*"
+
+Rails/FilePath:
+  Enabled: true
+  Exclude:
+  - "spec/dummy/config/environments/development.rb"
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: true
+  Exclude:
+  - "spec/reek_spec.rb"
+
+Style/Documentation:
+  Description: Document classes and non-namespace modules.
+  Enabled: false
+  Exclude:
+  - "spec/**/*"
+  - "test/**/*"
+
+Style/MixinUsage:
+  Enabled: true
+  Exclude:
+  - "spec/dummy/bin/*"
