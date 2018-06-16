@@ -1,8 +1,14 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/b80770f2fa6c4c54b3c9/maintainability)](https://codeclimate.com/github/yld/pure_rbac/maintainability)
+[![Build Status](https://semaphoreci.com/api/v1/yld/pure_rbac/branches/master/badge.svg)](https://semaphoreci.com/yld/pure_rbac)
+
 # PureRbac
-Short description and motivation.
+A pure RAILS RBAC implementation based on SQL roles and permissions.
+
+Tree roles hierarchy in progress.
 
 ## Usage
-How to use my plugin.
+Include the engine in your application.
+Wait for the generator to easily set it up.
 
 ## Installation
 Add this line to your application's Gemfile:
