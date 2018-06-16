@@ -40,7 +40,8 @@ RSpec/ExampleLength:
 RSpec/DescribeClass:
   Enabled: true
   Exclude:
-  - "spec/reek_spec.rb"
+   - "spec/reek_spec.rb"
+   - "spec/factories_spec.rb"
 
 Style/Documentation:
   Description: Document classes and non-namespace modules.
